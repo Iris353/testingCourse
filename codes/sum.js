@@ -1,6 +1,6 @@
 /* sum.js */
 
-module.exports = function () {
+export default function () {
 
   // Convert arguments object to an array
   var args = Array.prototype.slice.call(arguments);
