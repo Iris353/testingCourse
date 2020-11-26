@@ -1,7 +1,8 @@
 /* test/sum.js */
 
-var sum = require('../codes/sum.js');
-var expect = require('chai').expect;
+import sum from '../codes/sum.js';
+import pkg from 'chai';
+const { expect } = pkg;
 
 describe('dummytest', function() {
 
