@@ -1,8 +1,11 @@
 language: node_js
 node_js:
   - "node"
+after_script:  
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 after_success:
   "sbt coveralls"
+  "npm run coveralls"
 #env:
  # global:
   #  - COVERALLS_PARALLEL=true
