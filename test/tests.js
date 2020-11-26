@@ -8,7 +8,7 @@ describe('dummytest', function() {
 
   context('without arguments', function() {
     it('should return 0', function() {
-      expect(0).to.equal(0)
+      expect(0).to.equal(0);
     })
   })
 })
