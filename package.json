@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha",
-    "coveralls": "./node_modules/.bin/mocha test/tests.js -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "nyc — -reporter=html — reporter=text mocha — timeout 10000 — exit — require babel-register [../test/tests.js]",
+    "coveralls": "./node_modules/.bin/mocha test/tests.js -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js",
+    "coverage": "nyc report — -reporter=text-lcov | coveralls"
   },
   "author": "",
   "license": "ISC",
