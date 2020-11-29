@@ -5,6 +5,8 @@ after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 after_success:
   "sbt coveralls"
+service_name: travis-pro
+repo_token: d5IOBG2YSNRNDurX5iV9Mi3etV7IdtBrC
 #env:
  # global:
   #  - COVERALLS_PARALLEL=true
