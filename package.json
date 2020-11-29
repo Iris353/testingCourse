@@ -5,20 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "nyc — -reporter=html — reporter=text mocha — timeout 10000 — exit — require babel-register [../test/tests.js]",
-    "coveralls": "./node_modules/.bin/mocha test/tests.js -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js",
-    "coverage": "nyc report — -reporter=text-lcov | coveralls"
+    "test": "nyc mocha test/tests.js --exit",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=lcov"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",
-    "mocha": "^8.1.3",
-    "mocha-lcov-reporter": "^1.3.0"
+    "mocha": "^8.2.1",
+    "mocha-lcov-reporter": "^1.3.0",
+    "mochawesome": "^6.2.1"
   },
   "dependencies": {
-    "mochawesome": "^6.2.1",
     "nyc": "^15.1.0"
   }
 }
