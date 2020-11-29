@@ -3,14 +3,8 @@ node_js:
   - "node"
 after_script:  
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+#after_success:
+ # "sbt coveralls"
 after_success:
-  "sbt coveralls"
-env:
-  global:
-    - COVERALLS_PARALLEL=true
-#jobs:
-  #include:
-   # - script: COVERALLS_FLAG_NAME=tests make test-coveralls-1
-   # - script: COVERALLS_FLAG_NAME=test-2 make test-coveralls-2
-notifications:
-  webhooks: https://coveralls.io//repos/github/Iris353/testingCourse/badge.svg?branch=main
+- ./node_modules/.bin/jscoverage lib lib-cov
+- ./node_modules/.bin/mocha test/**.js -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js
