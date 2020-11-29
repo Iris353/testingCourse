@@ -8,9 +8,9 @@ after_success:
 env:
   global:
     - COVERALLS_PARALLEL=true
-jobs:
-  include:
-    - script: COVERALLS_FLAG_NAME=tests make test-coveralls-1
+#jobs:
+  #include:
+   # - script: COVERALLS_FLAG_NAME=tests make test-coveralls-1
    # - script: COVERALLS_FLAG_NAME=test-2 make test-coveralls-2
 notifications:
   webhooks: https://coveralls.io//repos/github/Iris353/testingCourse/badge.svg?branch=main
