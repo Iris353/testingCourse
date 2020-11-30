@@ -5,9 +5,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "nyc mocha test/tests.js --exit",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "coverage": "nyc report --reporter=text-lcov | coveralls && nyc report --reporter=lcov"
+    "test": "mocha",
+    "coverage": "nyc --reporter=text npm run test"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "codes"
+    ],
+    "exclude": [
+      "codes\\.internal"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +27,7 @@
     "mochawesome": "^6.2.1"
   },
   "dependencies": {
+    "lcov-parse": "^1.0.0",
     "nyc": "^15.1.0"
   }
 }
