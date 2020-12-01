@@ -1,23 +1,18 @@
-/* test/sum.js */
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
-import sum from "../codes/sum.js";
 import camelCase from "../codes/camelCase.js";
-import pkg from "chai";
-const { expect } = pkg;
+
+var mocha = require("mocha");
+var assert = require('assert');
 
 describe("dummytest", function() {
 
-  context("without arguments", function() {
-    it("should return 0", function() {
-      expect(0).to.equal(0);
-    })
-
-    it("should be two", () =>{
-      expect(sum(1,1)).to.equal(2);
-    })
-    
+  context("without arguments", function() {  
     it("should be camelcased", () =>{
-      expect(camelCase("Moi Kaikki")).to.equal(" moiKaikki");
+      console.log(camelCase)
+      let x = camelCase('Foo Bar');
+      assert.equal(x, " fooBar");
     })
   })
 })
