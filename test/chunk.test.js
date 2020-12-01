@@ -1,4 +1,4 @@
-import chunck from "../codes/chunk.js";
+import chunk from "../codes/chunk.js";
 import pkg from "chai";
 const { expect, assert } = pkg;
 
