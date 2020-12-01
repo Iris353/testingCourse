@@ -2,7 +2,7 @@ import chunck from "../codes/chunk.js";
 import pkg from "chai";
 const { expect, assert } = pkg;
 
-describe("Test camelCase function", function() {
+describe("Test chunk function", function() {
 
     it("should throw error when invalid params", function() {
         assert.throw(() => { chunk(object, object) }, Error);
