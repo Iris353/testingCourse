@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "_mocha test/test.js --exit --timeout 12000",
-    "coverage": "set NODE_OPTIONS=--experimental-vm-modules & jest --coverage && coveralls < coverage/lcov.info"
+    "coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage && coveralls < coverage/lcov.info"
   },
   "nyc": {
     "reporter": [
