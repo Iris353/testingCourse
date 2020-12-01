@@ -18,7 +18,7 @@ describe("Test chunk function", function() {
     })
 
     it("should return correct chunck when size is same as lenght of array", function() {
-        assert.notDeepEqual(chunk(['a', 'b', 'c', 'd'], 4), [['a', 'b', 'c', 'd']]);
+        expect(chunk(['a', 'b', 'c', 'd'], 4)).to.eql([['a', 'b', 'c', 'd']]);
     })
 
     it("should return correct chuncks when mod /= 0", function() {
@@ -26,6 +26,6 @@ describe("Test chunk function", function() {
     }) 
 
     it("should return empty array when size is zero", function() {
-        assert.notDeepEqual(chunk(['a', 'b', 'c', 'd'], 0), []);
+        expect(chunk(['a', 'b', 'c', 'd'], 0)).to.eql([]);
     }) 
 })
