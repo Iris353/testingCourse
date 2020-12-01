@@ -12,7 +12,7 @@ describe("Test clamp function", function() {
 
     it("should clamp outbound number to bounds", function() {
         expect(clamp(-10,-5,5)).to.eql(-5);
-        expect(clamp(10,-5,15).to.eql(10);
+        expect(clamp(10,-5,15)).to.eql(10);
     })
 
     it("should clamp in obound number to bounds", function() {
