@@ -1,18 +1,13 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-
 import camelCase from "../codes/camelCase.js";
-
-var mocha = require("mocha");
-var assert = require('assert');
+import pkg from "chai";
+const { expect } = pkg;
 
 describe("dummytest", function() {
 
-  context("without arguments", function() {  
+    it("should return 0", function() {
+      expect(0).to.equal(0);
+    }) 
     it("should be camelcased", () =>{
-      console.log(camelCase)
-      let x = camelCase('Foo Bar');
-      assert.equal(x, " fooBar");
+      expect(camelCase("Moi Kaikki")).to.equal(" moiKaikki");
     })
-  })
 })
