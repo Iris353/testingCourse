@@ -4,11 +4,8 @@
   "description": "testing course project",
   "main": "index.js",
   "type": "module",
-  "bin": {
-    "coveralls": "./bin/coveralls.js"
-  },
   "scripts": {
-    "test": "_mocha test/test.js --exit --timeout 12000",
+    "test": "_mocha test/ --exit --timeout 12000",
     "coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage && coveralls < coverage/lcov.info"
   },
   "nyc": {
