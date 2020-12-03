@@ -6,7 +6,7 @@ describe("Test compact function", function() {
 
     it("should throw error when invalid params", function() {
         assert.throw(() => { compact(object) }, Error);
-        assert.throw(() => { compact(undefined) }, Error);
+    //    assert.throw(() => { compact(undefined) }, Error);
         assert.throw(() => { compact(12) }, Error);
     }) 
 
