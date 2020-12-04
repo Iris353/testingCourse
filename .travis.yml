@@ -3,6 +3,8 @@ node_js:
   - "node"
 script:
   - npm run test
+  #- npm run coverage
+after_script:
   - npm run coverage
 #after_script:  
  # - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
