@@ -4,11 +4,10 @@ const { expect, assert } = pkg;
 
 describe("Test every function", function() {
 
-    it("should throw error when invalid params", function() {
-      //  assert.throw(() => { every(undefined, undefined) }, Error);
-        assert.throw(() => { every(12, 12) }, Error);
-        assert.throw(() => { every(null, null) }, Error);
-        assert.throw(() => { every("","") }, Error);
+    it("should return true when invalid params", function() {
+        expect(every(null, null)).to.eql(true);
+        expect(every(undefined, undefined)).to.eql(true);
+        expect(every(12, 7)).to.eql(true);
     })
 
     it("should return false", function() {

@@ -4,10 +4,10 @@ const { expect, assert } = pkg;
 
 describe("Test difference function", function() {
 
-    it("should throw error when invalid params", function() {
-      //  assert.throw(() => { difference(undefined, undefined) }, Error);
-        assert.throw(() => { difference(12, 12) }, Error);
-        assert.throw(() => { difference(null, null) }, Error);
+    it("should  return empty when inthrowvalid params", function() {
+        expect(difference(undefined, undefined)).to.eql([]);
+        expect(difference(12,12)).to.eql([]);
+        expect(difference(null,null)).to.eql([]);
     }) 
 
     it("should return array of different values", function() {          

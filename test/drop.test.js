@@ -4,16 +4,18 @@ const { expect, assert } = pkg;
 
 describe("Test drop function", function() {
 
-    it("should throw error when invalid params", function() {
-      //  assert.throw(() => { drop(undefined) }, Error);
-        assert.throw(() => { drop(12, 12) }, Error);
-        assert.throw(() => { drop(null, null) }, Error);
-        assert.throw(() => { drop(null) }, Error);
-        assert.throw(() => { drop("test") }, Error);
+    it("should return empty array when invalid params", function() {
+        expect(drop(undefined)).to.eql([]);
+        expect(drop(5)).to.eql([]);
+        expect(drop(1, 5)).to.eql([]);
+        expect(drop(null)).to.eql([]);
+        expect(drop(null, null)).to.eql([]);
+        expect(drop('test','test')).to.eql([]);
+
     })
     
     it("should handle negative", function() {
-        assert.throw(() => { drop([1,2,3], -1) }, Error);
+        expect(drop([1,2,3], -1)).to.eql([1,2,3])
     })
 
     it("should handle when remove more than array length", function() {
