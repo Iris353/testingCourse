@@ -2,7 +2,7 @@ import add from "../codes/add.js";
 import pkg from "chai";
 const { expect, assert } = pkg;
 
-describe("Test at function", function() {
+describe("Test add function", function() {
 
     it("should add positive numbers", function() {
         expect(add(1, 1)).to.eql(2);
