@@ -1,0 +1,7 @@
+Bug Name: Countby function does not count all instances.
+Description: Counted values are smaller by one.
+Expected Result: Expected to return correct count value.
+Severity:High
+Priority:High
+Reported By: Elli Hurme
+Reported On: 7.12.2020
