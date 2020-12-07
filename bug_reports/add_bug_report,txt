@@ -1,0 +1,7 @@
+Bug Name: Add function does not handle erronious parameter values.
+Description: Does not throw error or give error message.
+Expected Result: Expected to do some error handling.
+Severity:Medium
+Priority:Medium
+Reported By: Elli Hurme
+Reported On: 7.12.2020
