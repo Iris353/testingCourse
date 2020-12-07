@@ -8,6 +8,12 @@
     "test": "_mocha test/ --exit --timeout 12000",
     "coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage && coveralls < coverage/lcov.info"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/codes/**",
+      "!**/codes/.internal/**"
+    ]
+  },
   "nyc": {
     "reporter": [
       "lcov",
