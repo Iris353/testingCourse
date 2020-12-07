@@ -12,7 +12,6 @@ describe("Test every function", function() {
 
     it("should return false", function() {
         expect(every([true, 1, null, 'yes'], Boolean)).to.eql(false);
-        expect(every([true, 1, null, 'yes'], String)).to.eql(false);
         expect(every([true, 1, null, 'yes'], Number)).to.eql(false);
     })
 
