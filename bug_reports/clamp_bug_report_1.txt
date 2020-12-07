@@ -1,0 +1,7 @@
+Bug Name: Clamp function does not clamp values outside bounds correctly.
+Description: When trying to clamp value to bounds, -5 value is returned.
+Expected Result: Expected to return value that is in bounds.
+Severity:High
+Priority:Medium
+Reported By: Elli Hurme
+Reported On: 7.12.2020
