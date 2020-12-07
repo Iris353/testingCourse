@@ -2,6 +2,6 @@ Bug Name: Clamp function does not handle different types of values.
 Description: When using incorrect value types, no error is thrown or error message given.
 Expected Result: Expected to handle some way.
 Severity:Medium
-Priority:Low
+Priority:Minor
 Reported By: Elli Hurme
 Reported On: 7.12.2020
