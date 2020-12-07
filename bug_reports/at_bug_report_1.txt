@@ -1,6 +1,7 @@
 Bug Name: At function returns undefined when path finds nothing
 Description: When at function is given incorrect paths, it return undefined as value.
 This might break the system.
+Expected Result: Expected to return only found values
 Severity:Medium
 Priority:Medium
 Reported By: Elli Hurme
