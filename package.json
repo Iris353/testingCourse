@@ -8,19 +8,6 @@
     "test": "_mocha test/ --exit --timeout 12000",
     "coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage && coveralls < coverage/lcov.info"
   },
-  "nyc": {
-    "reporter": [
-      "lcov",
-      "text-summary"
-    ],
-    "all": true,
-    "include": [
-      "codes"
-    ],
-    "exclude": [
-      "codes\\.internal"
-    ]
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -34,7 +21,6 @@
   },
   "dependencies": {
     "jest": "^26.6.3",
-    "lcov-parse": "^1.0.0",
-    "nyc": "^15.1.0"
+    "lcov-parse": "^1.0.0"
   }
 }
