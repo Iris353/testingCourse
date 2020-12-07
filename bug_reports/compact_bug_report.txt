@@ -1,7 +1,7 @@
-Bug Name: Compact function moves first value of array to the end
-Description: in return value array the first value is in the end of array (index = length-1).
-Expected Result: Expected to return array where falsey values are just removed.
+Bug Name: Compact function result is not in correct order
+Description: Not sure what happens. Either in return value array the first value is moved to the end of array or to index -1.
+Expected Result: Expected to return array where falsey values are just removed and order does not change.
 Severity:Low
-Priority:Low
+Priority:Medium
 Reported By: Elli Hurme
 Reported On: 7.12.2020
