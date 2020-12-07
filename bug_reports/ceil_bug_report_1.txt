@@ -1,0 +1,8 @@
+Bug Name: Ceil function does not round value with less than five decimals correctly.
+Description: When trying to round number with decimals that are less than five, number is rounded up.
+Happens with or without second parameter.
+Expected Result: Expected to round down. For example ceil(1.0001) to number 1 and ceil(2.512,1) to 2.5.
+Severity:Medium
+Priority:Low
+Reported By: Elli Hurme
+Reported On: 7.12.2020

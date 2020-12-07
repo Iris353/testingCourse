@@ -1,0 +1,7 @@
+Bug Name: Giving ceil function other value types than numbers is not handled.
+Description: Does not throw error or give error message. Might break the system.
+Expected Result: Should handle different types of values or throw error.
+Severity:Medium
+Priority:Medium
+Reported By: Elli Hurme
+Reported On: 7.12.2020
