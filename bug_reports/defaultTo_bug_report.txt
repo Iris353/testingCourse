@@ -1,7 +1,7 @@
 Bug Name: Function does not return default value when value is NaN
 Description: When at function is given Nan and default value, it returns Nan when it should return default
 Expected Result: Expected to return default value
-Severity:Medium
-Priority:Medium
+Severity:High
+Priority:High
 Reported By: Iris Leinonen
 Reported On: 7.12.2020
