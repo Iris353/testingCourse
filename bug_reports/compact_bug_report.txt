@@ -1,4 +1,4 @@
-Bug Name: Clamp function moves first value of array to the end
+Bug Name: Compact function moves first value of array to the end
 Description: in return value array the first value is in the end of array (index = length-1).
 Expected Result: Expected to return array where falsey values are just removed.
 Severity:Low
