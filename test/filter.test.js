@@ -9,8 +9,8 @@ describe("Test filter function", function() {
         { 'user': 'fred',   'active': false }
     ];
 
-    it("should return active users", function() {
-        expect(filter(users, ({ active }) => active)).to.be.an('array').that.includes({'user': 'barney', 'active': true});
+    it("should return empty", function() {
+        //expect(filter(users, ({ temp }) => temp)).to.eql([]);
     })
 
     it("should return active users2", function() {

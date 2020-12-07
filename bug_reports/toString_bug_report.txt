@@ -1,0 +1,7 @@
+Bug Name: ToString function returns null and undefined
+Description: When at function is given null or undefined as parameter it returns null/undefined when it should return empty string
+Expected Result: Expected to return empty string
+Severity:Medium
+Priority:Medium
+Reported By: Iris Leinonen
+Reported On: 7.12.2020

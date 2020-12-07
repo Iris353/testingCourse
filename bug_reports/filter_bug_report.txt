@@ -1,0 +1,7 @@
+Bug Name: Function returs array inside an array
+Description: When at function does not find results it returns array inside an array when it should return a single empty array
+Expected Result: Expected to return empty array
+Severity:Minor
+Priority:Minor
+Reported By: Iris Leinonen
+Reported On: 7.12.2020
