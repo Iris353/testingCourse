@@ -3,6 +3,6 @@ Description: When trying to round number with decimals that are less than five, 
 Happens with or without second parameter.
 Expected Result: Expected to round down. For example ceil(1.0001) to number 1 and ceil(2.512,1) to 2.5.
 Severity:Medium
-Priority:Low
+Priority:High
 Reported By: Elli Hurme
 Reported On: 7.12.2020
