@@ -1,0 +1,7 @@
+Bug Name: At function returns undefined when path finds nothing
+Description: When at function is given incorrect paths, it return undefined as value.
+This might break the system.
+Severity:Medium
+Priority:Medium
+Reported By: Elli Hurme
+Reported On: 7.12.2020
