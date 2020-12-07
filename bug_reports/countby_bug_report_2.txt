@@ -1,0 +1,7 @@
+Bug Name: When countby function is given wrong function as parameter, undefined is counted.
+Description: When function does not find any value and returns undefined, the undefined are counted and returned (e.g. {undefinded:2}).
+Expected Result: Should handle not finding values. Expecting empty object.
+Severity:Medium
+Priority:Low
+Reported By: Elli Hurme
+Reported On: 7.12.2020

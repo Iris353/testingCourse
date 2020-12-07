@@ -10,7 +10,7 @@ describe("Test drop function", function() {
         expect(drop(1, 5)).to.eql([]);
         expect(drop(null)).to.eql([]);
         expect(drop(null, null)).to.eql([]);
-        expect(drop('test','test')).to.eql([]);
+        expect(drop('t')).to.eql([]);
 
     })
     
